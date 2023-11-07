@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <Header class="header">
+      <div class="container">
+        <label class="form-label">
+          Művek (db):
+          <input id="szoborDb" class="form-control" type="number" readonly>
+        </label>
+
+        <label class="form-label">
+          Össz ár (Ft):
+          <input id="arakFt" class="form-control" type="number" readonly>
+        </label>
+      </div>
+    </Header>
+    <hr>
+    <form>
+      <div class="container">
+
+        <label class="form-label">
+          Title:
+          <input class="form-control" id="titleInput" type="text">
+        </label>
+
+        <label class="form-label">
+          Year:
+          <input class="form-control" id="yearInput" type="text">
+        </label>
+
+        <label class="form-label">
+          Price:
+          <input class="form-control" id="priceInput" type="number">
+        </label>
+
+        <label class="form-label">
+          Height:
+          <input class="form-control" id="heightInput" type="number">
+        </label>
+
+        <p id="errorMessage"></p>
+        <button id="button" class="btn btn-warning">Submit</button>
+      </div>
+    </form>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
